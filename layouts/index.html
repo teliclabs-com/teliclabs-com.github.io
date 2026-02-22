@@ -1,0 +1,134 @@
+{{ define "main" }}
+
+<!-- ── Hero ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Secure AI Infrastructure</div>
+    <h1 class="hero-headline">{{ .Site.Params.description }}</h1>
+    <p class="hero-tagline">{{ .Site.Params.tagline }}</p>
+    <div class="hero-cta">
+      <a href="/products/" class="btn btn-primary">View Offerings &amp; Pricing</a>
+      <a href="/about/#contact" class="btn btn-secondary">Book a Strategy Call</a>
+    </div>
+  </div>
+
+  <!-- Illustrative architecture diagram -->
+  <div class="hero-diagram">
+    <div class="diagram-box">
+      <div class="diagram-node node-top">Your AWS Account</div>
+      <div class="diagram-flow">
+        <div class="diagram-node node-mid">Telic AI Foundation</div>
+      </div>
+      <div class="diagram-row">
+        <div class="diagram-node node-sm">Bedrock<br>LLM</div>
+        <div class="diagram-node node-sm">RAG<br>Engine</div>
+        <div class="diagram-node node-sm">Guard&shy;rails</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Problem ───────────────────────────────────────────── -->
+<section class="problem-section">
+  <div class="section-container">
+    <h2 class="section-label">// The Problem</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon">⚠️</div>
+        <h3>AI Pilots Stall at Security Review</h3>
+        <p>Standard SaaS AI tools can't meet data residency, FIPS compliance, or audit requirements. Projects die before they reach production.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🔒</div>
+        <h3>Vendor Lock-In &amp; Data Exposure</h3>
+        <p>Hosted AI platforms own your pipelines and your data. A pricing change or acquisition leaves you with no options and no control.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon">🏗️</div>
+        <h3>Deep Infrastructure Expertise Gap</h3>
+        <p>Production-ready compliant AI on AWS requires mastery of IAM, ECS, Bedrock guardrails, and secure RAG patterns — skills most teams don't have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Solution ──────────────────────────────────────────── -->
+<section class="solution-section">
+  <div class="section-container">
+    <h2 class="section-label">// How Telic Labs Solves It</h2>
+    <div class="solution-grid">
+      <div class="solution-text">
+        <h3>Private AI. Deployed Inside Your AWS Account.</h3>
+        <p>Telic Labs delivers production-ready AI infrastructure that lives entirely within your AWS environment. No third-party data access. No vendor lock-in. Full ownership.</p>
+        <ul class="solution-list">
+          <li>Bedrock-powered LLM layer with enforced guardrails and grounding</li>
+          <li>Private RAG knowledge base with document ingestion pipeline</li>
+          <li>FIPS-aligned IAM architecture and role design</li>
+          <li>Audit-ready CloudWatch logging and cost governance tagging</li>
+          <li>Hardened CI/CD pipeline with Checkov policy enforcement</li>
+          <li>ECS containerized deployment — repeatable and version-controlled</li>
+        </ul>
+        <a href="/products/" class="btn btn-primary">See Offerings &amp; Pricing</a>
+      </div>
+      <div class="solution-diagram">
+        <div class="arch-block arch-secure">
+          <span class="arch-label">Security Boundary — Your AWS Account</span>
+          <div class="arch-inner">
+            <div class="arch-row">
+              <div class="arch-item">Amazon Bedrock<small>Guardrailed LLM</small></div>
+              <div class="arch-item">ECS Fargate<small>Application Layer</small></div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-item">ChromaDB<small>Vector Store</small></div>
+              <div class="arch-item">S3<small>Document Store</small></div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-item arch-wide">CloudWatch · IAM · Cost Tags · Checkov</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Who We Serve ──────────────────────────────────────── -->
+<section class="serve-section">
+  <div class="section-container">
+    <h2 class="section-label">// Built For</h2>
+    <div class="serve-grid">
+      <div class="serve-card">
+        <h3>Government Contractors</h3>
+        <p>FIPS-aligned, audit-ready, US-hosted. Meet compliance requirements without sacrificing AI capability or waiting on vendor certifications.</p>
+      </div>
+      <div class="serve-card">
+        <h3>Research Organizations</h3>
+        <p>Proprietary data stays private. Deploy AI over sensitive corpora without exposing them to any external vendor or model provider.</p>
+      </div>
+      <div class="serve-card">
+        <h3>Healthcare &amp; Legal Firms</h3>
+        <p>HIPAA-sensitive and attorney-client privileged data never leaves your controlled AWS environment — not even to the AI layer.</p>
+      </div>
+      <div class="serve-card">
+        <h3>AWS-Native Tech Companies</h3>
+        <p>Already running on AWS? We meet you where you are. No rearchitecting, no new compliance exposures, no additional vendor relationships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ───────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="section-container">
+    <div class="cta-inner">
+      <h2>Ready to Deploy Secure AI in Your AWS Account?</h2>
+      <p>Schedule a free 20-minute strategy call. No sales pressure — just a direct conversation about what you're building and whether Telic Labs is the right fit.</p>
+      <div class="cta-buttons">
+        <a href="/about/#contact" class="btn btn-primary btn-lg">Book a Strategy Call</a>
+        <a href="/products/" class="btn btn-outline btn-lg">See Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

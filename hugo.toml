@@ -1,0 +1,29 @@
+baseURL = 'https://teliclabs.com/'
+languageCode = 'en-us'
+title = 'Telic Labs'
+
+# Disable unused taxonomy pages to keep the site clean
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = "Purpose-built AI infrastructure for AWS-native organizations."
+  tagline = "Your AI. Your AWS. Your control."
+  contactEmail = "hello@teliclabs.com"
+  calLink = "https://calendly.com/teliclabs"
+
+[[menus.main]]
+  name = "Products & Pricing"
+  url = "/products/"
+  weight = 1
+
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menus.main]]
+  name = "Book a Call"
+  url = "/about/#contact"
+  weight = 3
+  [menus.main.params]
+    class = "btn-nav"

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }} {{ .Site.Params.tagline }}{{ else }}{{ .Description }}{{ end }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description | default .Site.Params.description }}">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/teliclogo.png">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-telic">TELIC</span><span class="logo-labs">LABS</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation"
+              onclick="this.closest('nav').classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}"
+             class="{{ with .Params.class }}{{ . }}{{ end }}{{ if eq $.RelPermalink .URL }} active{{ end }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="logo-telic">TELIC</span><span class="logo-labs">LABS</span>
+        </a>
+        <p>{{ .Site.Params.description }}</p>
+        <p class="footer-tagline">{{ .Site.Params.tagline }}</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/products/">Products &amp; Pricing</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/about/#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} Telic Labs LLC. All rights reserved.</p>
+      <p>Secure AI. Deployed inside your AWS account.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

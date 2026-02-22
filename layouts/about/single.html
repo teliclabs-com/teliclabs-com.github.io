@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+<!-- ── Page Hero ─────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="section-container">
+    <h2 class="section-label">// About</h2>
+    <h1>Built for Organizations That Can't Afford to Get AI Wrong</h1>
+    <p class="lead">
+      Telic Labs exists because enterprise AI projects keep failing for the same reasons — data exposure,
+      compliance gaps, and infrastructure teams that weren't built to ship production AI.
+      We fix that.
+    </p>
+  </div>
+</section>
+
+<!-- ── Main Content ───────────────────────────────────────── -->
+<section class="about-section">
+  <div class="section-container">
+    <div class="about-grid">
+
+      <!-- Left: narrative -->
+      <div class="prose">
+        <h2>Our Mission</h2>
+        <p>
+          Telic Labs delivers secure, AWS-native AI infrastructure for organizations that operate in
+          regulated environments or handle sensitive data. We believe enterprises should be able to
+          harness the power of large language models without sacrificing data ownership, compliance
+          posture, or architectural control.
+        </p>
+        <p>
+          We don't build consumer AI tools or generic ChatGPT wrappers. We build production-grade
+          AI foundations — inside your AWS account, governed by your policies, owned entirely by you.
+        </p>
+
+        <h2>What We Build</h2>
+        <p>
+          Every Telic Labs engagement produces a repeatable, documented AI infrastructure layer that includes:
+        </p>
+        <ul>
+          <li>Guardrailed Amazon Bedrock proxy with enforced grounding and citation requirements</li>
+          <li>Private RAG knowledge base backed by ChromaDB and S3 document ingestion</li>
+          <li>ECS Fargate containerized deployment with version-controlled Terraform</li>
+          <li>FIPS-aligned IAM role architecture and least-privilege access patterns</li>
+          <li>CloudWatch audit logging, cost tagging, and budget alerting</li>
+          <li>CI/CD pipeline with Checkov policy enforcement and OIDC GitHub Actions integration</li>
+        </ul>
+
+        <h2>Why "Telic"</h2>
+        <p>
+          <em>Telic</em> means goal-directed — purposeful action oriented toward a defined outcome.
+          That's how we approach every engagement. We don't deliver experiments or pilot frameworks.
+          We deploy systems built to run in production from day one.
+        </p>
+
+        <h2>Our Approach</h2>
+        <p>
+          Every engagement begins with a brief architecture review to understand your data boundaries,
+          compliance requirements, and existing AWS footprint. From there we work from a standardized
+          deployment playbook refined across real production environments — not prototypes.
+        </p>
+        <p>
+          We operate on fixed-fee, scoped engagements with defined deliverables. No open-ended hourly
+          billing. No scope creep. You know exactly what you're getting before we start.
+        </p>
+
+        <h2>Background</h2>
+        <p>
+          Telic Labs was founded by an enterprise infrastructure architect with deep experience in
+          AWS, DevSecOps, and production AI systems. Prior work spans regulated research environments,
+          government-adjacent organizations, and AWS-native SaaS teams — giving us firsthand
+          understanding of the compliance and governance requirements our clients face every day.
+        </p>
+        <ul>
+          <li>AWS architecture including ECS, Bedrock, S3, IAM, CloudWatch, and VPC design</li>
+          <li>DevSecOps pipeline implementation with Checkov, OIDC, and policy-as-code</li>
+          <li>RAG system design using ChromaDB, vector embeddings, and document ingestion pipelines</li>
+          <li>Compliance-aware infrastructure for FIPS, CJIS-adjacent, and SOC 2-aligned environments</li>
+          <li>Terraform Infrastructure as Code with modular, reusable architecture patterns</li>
+        </ul>
+      </div>
+
+      <!-- Right: contact sidebar -->
+      <div>
+        <div class="sidebar-card" id="contact">
+          <h3>Get in Touch</h3>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">
+                <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+              </span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Engagements</span>
+              <span class="contact-value">By invitation and referral</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Response Time</span>
+              <span class="contact-value">Within 1 business day</span>
+            </div>
+          </div>
+          <a href="{{ .Site.Params.calLink }}" class="btn btn-primary" target="_blank" rel="noopener">
+            Book a Free Strategy Call
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Values ─────────────────────────────────────────────── -->
+<section class="values-section">
+  <div class="section-container">
+    <h2 class="section-label">// What We Stand For</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">🔐</div>
+        <h3>Ownership First</h3>
+        <p>Everything we deploy lives in your AWS account. We never hold your data, your infrastructure, or your access hostage.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📐</div>
+        <h3>Engineered to Last</h3>
+        <p>No duct-tape deployments. Every system is version-controlled, documented, and designed to be maintained and extended by your team.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <h3>Purposeful Scope</h3>
+        <p>We work within clearly defined engagements with fixed deliverables. No ambiguity, no billing surprises, no endless retainers you don't need.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
