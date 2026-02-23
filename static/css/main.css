@@ -504,6 +504,22 @@ p { color: var(--text-secondary); }
 }
 
 /* ── Page Hero (inner pages) ──────────────────────────────── */
+.about-hero-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-hero-logo {
+  height: 160px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.about-hero-heading h1 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
 .page-hero {
   padding: 5rem 0 4rem;
   border-bottom: 1px solid var(--border);
