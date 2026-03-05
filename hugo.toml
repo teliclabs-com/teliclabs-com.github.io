@@ -6,13 +6,13 @@ title = 'Telic Labs'
 disableKinds = ['taxonomy', 'term']
 
 [params]
-  description = "Purpose-built AI infrastructure for AWS-native organizations."
-  tagline = "Your AI. Your AWS. Your control."
+  description = "An indie studio building AI-native iOS apps."
+  tagline = "Intelligent apps. Crafted with care. Built to last."
   contactEmail = "hello@teliclabs.com"
   calLink = "https://calendly.com/teliclabs"
 
 [[menus.main]]
-  name = "Products & Pricing"
+  name = "Apps"
   url = "/products/"
   weight = 1
 

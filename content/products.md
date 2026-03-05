@@ -1,5 +1,5 @@
 ---
-title: "Products & Pricing"
-description: "Two clear paths to secure AI infrastructure in your AWS account. Choose the level of support that fits your team."
+title: "Apps"
+description: "AI-native iOS apps from Telic Labs — intelligent tools designed with craft and care."
 layout: "products"
 ---

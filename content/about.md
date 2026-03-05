@@ -1,5 +1,5 @@
 ---
 title: "About Telic Labs"
-description: "Telic Labs builds secure, AWS-native AI infrastructure for regulated organizations — deployed inside your environment, owned by you."
+description: "Telic Labs is an indie studio crafting AI-native iOS apps — intelligent, private, and built with purpose."
 layout: "about"
 ---

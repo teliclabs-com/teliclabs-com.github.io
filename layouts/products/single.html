@@ -3,172 +3,30 @@
 <!-- ── Page Hero ─────────────────────────────────────────── -->
 <section class="page-hero">
   <div class="section-container">
-    <h2 class="section-label">// Products &amp; Pricing</h2>
-    <h1>Two Clear Paths to Secure AI Infrastructure</h1>
+    <h2 class="section-label">// Apps</h2>
+    <h1>AI-Native iOS Apps, Coming Soon</h1>
     <p class="lead">
-      Whether your team wants to self-deploy with a proven framework or hand the keys to us
-      for a full production deployment, we have a fixed-scope, fixed-fee option that fits.
+      We're building our first wave of intelligent iOS apps — tools that use AI
+      to solve real problems, respect your privacy, and feel great to use.
     </p>
   </div>
 </section>
 
-<!-- ── Pricing Cards ──────────────────────────────────────── -->
+<!-- ── Coming Soon ──────────────────────────────────────── -->
 <section class="pricing-section">
   <div class="section-container">
 
-    <div class="pricing-grid">
-
-      <!-- Tier 1: Self-Service -->
-      <div class="pricing-card">
-        <div class="pricing-tier">Self-Service</div>
-        <h3>Telic Foundation Kit</h3>
-        <div class="pricing-price">
-          <span class="amount">$7,500</span>
-          <span class="note">One-time fee · Perpetual license</span>
-        </div>
-        <p class="pricing-desc">
-          A production-grade Terraform framework and RAG application template designed for
-          infrastructure teams that want to own their deployment from day one.
-        </p>
-        <ul class="feature-list">
-          <li>Terraform module library for Bedrock, ECS, VPC, and IAM</li>
-          <li>Secure Bedrock proxy with guardrail configuration templates</li>
-          <li>RAG knowledge base application (ChromaDB + S3 ingestion)</li>
-          <li>Hardened CI/CD pipeline templates (GitHub Actions + OIDC)</li>
-          <li>Cost tagging and CloudWatch logging baseline</li>
-          <li>Checkov policy pack for pre-commit security checks</li>
-          <li>Comprehensive setup documentation and runbooks</li>
-          <li>Two 60-minute advisory calls (architecture + deployment)</li>
-        </ul>
-        <a href="/about/#contact" class="btn btn-secondary">Get the Kit</a>
-      </div>
-
-      <!-- Tier 2: Done-for-You — Featured -->
-      <div class="pricing-card featured">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-tier">Done-For-You</div>
-        <h3>Telic Deployment Accelerator</h3>
-        <div class="pricing-price">
-          <span class="amount">From $25,000</span>
-          <span class="note">Fixed-fee · 30-day engagement</span>
-        </div>
-        <p class="pricing-desc">
-          We deploy a complete, production-ready secure AI foundation inside your AWS account.
-          You get a handoff-ready system with full documentation — no open-ended hourly billing.
-        </p>
-        <ul class="feature-list">
-          <li>Full AWS environment deployment from baseline to production</li>
-          <li>IAM architecture design and least-privilege role implementation</li>
-          <li>Bedrock guardrail configuration (grounding, citations, filters)</li>
-          <li>RAG ingestion pipeline setup with document processing workflow</li>
-          <li>CloudWatch dashboards, audit logging, and budget alerting</li>
-          <li>Custom domain, ACM certificates, and HTTPS termination</li>
-          <li>Hardened CI/CD pipeline deployed and validated</li>
-          <li>Security posture review and compliance mapping document</li>
-          <li>30 days of post-deployment support and architecture guidance</li>
-          <li>Full codebase ownership — Terraform, Dockerfiles, everything</li>
-        </ul>
-        <a href="/about/#contact" class="btn btn-primary">Book a Strategy Call</a>
-      </div>
-
-      <!-- Tier 3: Managed -->
-      <div class="pricing-card">
-        <div class="pricing-tier">Ongoing Governance</div>
-        <h3>Telic Managed Layer</h3>
-        <div class="pricing-price">
-          <span class="amount">From $2,000</span>
-          <span class="note">Per month · Cancel anytime</span>
-        </div>
-        <p class="pricing-desc">
-          Optional monthly governance and advisory retainer for teams that want ongoing expert
-          oversight without staffing a dedicated AI infrastructure engineer.
-        </p>
-        <ul class="feature-list">
-          <li>Monthly AWS cost and usage review with optimization recommendations</li>
-          <li>Guardrail and security configuration updates as models evolve</li>
-          <li>Quarterly architecture review and improvement roadmap</li>
-          <li>Bedrock model version monitoring and upgrade planning</li>
-          <li>Priority response to security or reliability incidents</li>
-          <li>Async Q&amp;A channel for your engineering team</li>
-        </ul>
-        <a href="/about/#contact" class="btn btn-secondary">Inquire About Retainer</a>
-      </div>
-
-    </div>
-
-    <!-- Comparison callout -->
     <div class="pricing-note">
-      <h3>Not sure which tier is right for you?</h3>
+      <h3>We're just getting started.</h3>
       <p>
-        Most clients starting from zero choose the <strong>Deployment Accelerator</strong> to get
-        a hardened baseline fast, then optionally move to the <strong>Managed Layer</strong> for
-        ongoing governance. The <strong>Foundation Kit</strong> is best for teams with senior AWS
-        engineers who want a proven starting point, not a blank page.
-        <a href="/about/#contact">Book a free 20-minute call</a> and we'll tell you exactly what fits.
+        Our first apps are currently in development. We're focused on getting the details
+        right before putting anything in the App Store — no rushed launches, no half-baked features.
       </p>
-    </div>
-
-    <!-- FAQ -->
-    <div class="faq-section">
-      <h2>Common Questions</h2>
-      <div class="faq-list">
-
-        <div class="faq-item">
-          <h4>Does my data ever leave my AWS account?</h4>
-          <p>
-            No. The entire stack — LLM proxy, vector store, document ingestion, and application layer —
-            runs inside your AWS account and VPC. Amazon Bedrock processes prompts inside AWS infrastructure.
-            No data is routed through Telic Labs systems.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4>What AWS services are required?</h4>
-          <p>
-            The baseline deployment uses ECS Fargate, Amazon Bedrock, S3, CloudWatch, IAM, ACM,
-            and a VPC. We recommend a dedicated AWS account for isolation, but can deploy into
-            an existing account with appropriate guardrails.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4>Which LLMs are supported?</h4>
-          <p>
-            We deploy via Amazon Bedrock, which provides access to Claude (Anthropic), Llama,
-            Titan, and other foundation models available in your region. The guardrail layer is
-            model-agnostic and can be updated as new models become available.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4>What does "30-day post-deployment support" include?</h4>
-          <p>
-            After handoff you have 30 days of async support for issues directly related to the
-            deployment (bugs, configuration questions, ingestion pipeline issues). It does not
-            include custom feature development. The Managed Layer retainer covers ongoing needs beyond that window.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4>Can you work with my existing Terraform or AWS setup?</h4>
-          <p>
-            Yes. We can deploy into existing accounts and integrate with existing Terraform state backends,
-            remote state, and CI/CD systems. A brief architecture review call is included before any
-            engagement begins to surface any constraints.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4>Is this FIPS 140-2 compliant?</h4>
-          <p>
-            We design IAM, VPC, and compute configurations to align with FIPS 140-2 requirements
-            where possible using AWS FIPS endpoints. Full FIPS compliance depends on your specific
-            regulatory context — we include a compliance mapping document in every engagement
-            so you know exactly where you stand.
-          </p>
-        </div>
-
-      </div>
+      <p>
+        When our apps are ready, you'll find them here. In the meantime, if you have an idea
+        for an AI-powered iOS app or just want to follow along,
+        <a href="/about/#contact">we'd love to hear from you</a>.
+      </p>
     </div>
 
   </div>
@@ -178,16 +36,14 @@
 <section class="cta-section">
   <div class="section-container">
     <div class="cta-inner">
-      <h2>Questions Before You Commit?</h2>
-      <p>Every engagement starts with a free 20-minute strategy call. We'll assess your environment, answer your questions, and tell you honestly whether we're the right fit.</p>
+      <h2>Want to Stay in the Loop?</h2>
+      <p>Drop us a line and we'll let you know when our first apps are ready. No spam, no newsletters — just a heads-up when there's something worth seeing.</p>
       <div class="cta-buttons">
-        {{/* Calendly not configured yet — uncomment when ready
-        <a href="{{ .Site.Params.calLink }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-          Schedule a Call
+        <a href="mailto:{{ .Site.Params.contactEmail }}" class="btn btn-primary btn-lg">
+          Say Hello
         </a>
-        */}}
-        <a href="mailto:{{ .Site.Params.contactEmail }}" class="btn btn-outline btn-lg">
-          Send an Email
+        <a href="/about/" class="btn btn-outline btn-lg">
+          Learn About Us
         </a>
       </div>
     </div>
